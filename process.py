@@ -45,7 +45,7 @@ class Nodule_classifier:
         # load malignancy model
         self.model = multi_dense_model((1, 64, 64, 64))
         self.model.load_weights(
-            "/opt/algorithm/models/resnet_noduletype_best_type_val_accuracy.h5",
+            "/opt/algorithm/models/dense_model_malignancy_best_val_accuracy.h5",
             by_name=True,
             skip_mismatch=True,
         )
